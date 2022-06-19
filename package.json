@@ -1,0 +1,19 @@
+{
+  "name": "testing-js-with-jest",
+  "version": "1.0.0",
+  "description": "Training repo for the third part of [Testing _JavaScript_ with Kent C. Dodds](https://testingjavascript.com/) course:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logic-fabric/testing-js-with-jest.git"
+  },
+  "author": "Lowic Mangin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logic-fabric/testing-js-with-jest/issues"
+  },
+  "homepage": "https://github.com/logic-fabric/testing-js-with-jest#readme"
+}
