@@ -1,0 +1,16 @@
+html {
+  color: white;
+  font-family: Helvetica, arial, sans-serif;
+
+  background: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1024px;
+  min-height: 100vh;
+}

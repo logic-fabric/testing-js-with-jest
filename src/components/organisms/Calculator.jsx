@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./calculator.module.css";
+
 const digit0 = () => {
   console.log("Digit 0");
 };
@@ -63,6 +65,7 @@ const decimalSeparator = () => {
 const CALCULATOR_KEYS = [
   "AC",
   "+/-",
+  "%",
   "/",
   "7",
   "8",
@@ -104,18 +107,23 @@ const CALCULATOR_KEYS_AND_OPERATORS = {
 };
 
 export function Calculator() {
-  console.log();
-
   return (
-    <>
+    <div className={styles.calculatorContainer}>
       {CALCULATOR_KEYS.map((calculatorKey) => (
         <button
-          key={`key-${calculatorKey}`}
+          className={`${styles.calculatorKey} ${
+            ["AC", "+/-", "%"].includes(calculatorKey)
+              ? styles.specialKey
+              : ["/", "*", "-", "+", "="].includes(calculatorKey)
+              ? styles.operatorKey
+              : ""
+          } ${calculatorKey === "0" ? styles.zeroKey : ""}`}
           onClick={() => CALCULATOR_KEYS_AND_OPERATORS[calculatorKey]()}
+          key={`key-${calculatorKey}`}
         >
           {calculatorKey}
         </button>
       ))}
-    </>
+    </div>
   );
 }
