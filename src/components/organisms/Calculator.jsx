@@ -1,5 +1,7 @@
 import React from "react";
 
+import { CalculatorKey } from "../atoms/CalculatorKey.jsx";
+
 import styles from "./calculator.module.css";
 
 const digit0 = () => {
@@ -110,19 +112,11 @@ export function Calculator() {
   return (
     <div className={styles.calculatorContainer}>
       {CALCULATOR_KEYS.map((calculatorKey) => (
-        <button
-          className={`${styles.calculatorKey} ${
-            ["AC", "+/-", "%"].includes(calculatorKey)
-              ? styles.specialKey
-              : ["/", "*", "-", "+", "="].includes(calculatorKey)
-              ? styles.operatorKey
-              : ""
-          } ${calculatorKey === "0" ? styles.zeroKey : ""}`}
+        <CalculatorKey
+          keyName={calculatorKey}
           onClick={() => CALCULATOR_KEYS_AND_OPERATORS[calculatorKey]()}
-          key={`key-${calculatorKey}`}
-        >
-          {calculatorKey}
-        </button>
+          key={calculatorKey}
+        />
       ))}
     </div>
   );
