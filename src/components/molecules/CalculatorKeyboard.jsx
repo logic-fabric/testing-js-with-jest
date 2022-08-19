@@ -2,8 +2,6 @@ import React from "react";
 
 import { CalculatorKey } from "../atoms/CalculatorKey.jsx";
 
-
-
 const digit0 = () => {
   console.log("Digit 0");
 };

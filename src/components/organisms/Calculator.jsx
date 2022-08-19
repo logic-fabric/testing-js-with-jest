@@ -1,7 +1,7 @@
 import React from "react";
 
-import { CalculatorDisplay } from "../molecules/CalculatorDisplay";
-import { CalculatorKeyboard } from "./CalculatorKeyboard.jsx";
+import { CalculatorDisplay } from "../atoms/CalculatorDisplay.jsx";
+import { CalculatorKeyboard } from "../molecules/CalculatorKeyboard.jsx";
 
 import styles from "./calculator.module.css";
 
