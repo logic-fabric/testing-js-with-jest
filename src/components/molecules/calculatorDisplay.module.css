@@ -1,0 +1,7 @@
+.displayContainer {
+  grid-column: 1/5;
+
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: right;
+}

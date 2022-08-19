@@ -1,6 +1,6 @@
 import React from "react";
 
-import { CalculatorKeyboard } from "./organisms/CalculatorKeyboard.jsx";
+import { Calculator } from "./organisms/Calculator.jsx";
 
 import styles from "./app.module.css";
 
@@ -9,7 +9,7 @@ export function App() {
     <main>
       <h1>React Calculator</h1>
 
-      <CalculatorKeyboard />
+      <Calculator />
     </main>
   );
 }
