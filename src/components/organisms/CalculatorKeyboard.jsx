@@ -2,7 +2,7 @@ import React from "react";
 
 import { CalculatorKey } from "../atoms/CalculatorKey.jsx";
 
-import styles from "./calculator.module.css";
+import styles from "./calculatorKeyboard.module.css";
 
 const digit0 = () => {
   console.log("Digit 0");
@@ -108,7 +108,7 @@ const CALCULATOR_KEYS_AND_OPERATORS = {
   "=": compute,
 };
 
-export function Calculator() {
+export function CalculatorKeyboard() {
   return (
     <div className={styles.calculatorContainer}>
       {CALCULATOR_KEYS.map((calculatorKey) => (
