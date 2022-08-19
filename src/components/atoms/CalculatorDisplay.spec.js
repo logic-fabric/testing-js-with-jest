@@ -5,5 +5,7 @@ import "react-testing-library/cleanup-after-each";
 import { CalculatorDisplay } from "./CalculatorDisplay.jsx";
 
 test("CalculatorDisplay renders", () => {
-  render(<CalculatorDisplay />);
+  const { debug } = render(<CalculatorDisplay />);
+
+  debug();
 });
